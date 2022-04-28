@@ -27,7 +27,12 @@ main h3{width:80%;}
 
 
 /*FORMULARIO*/
-aside{grid-area:formulario;}
+aside{grid-area:formulario; background-color: #274083;
+padding-top:30px; text-align: center;}
+aside form{width:90%; padding-top: 30px; margin:0 auto; display:flex;
+flex-direction: column;}
+aside input, select{width:100%; padding:15px; font-size:16px;
+margin-bottom:10px; border:none;}
 
 /*RODAPÉ*/
 footer{grid-area:rodape; background-color: #ccc; color:#274083;
