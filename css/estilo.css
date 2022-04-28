@@ -29,10 +29,17 @@ main h3{width:80%;}
 /*FORMULARIO*/
 aside{grid-area:formulario; background-color: #274083;
 padding-top:30px; text-align: center;}
+
 aside form{width:90%; padding-top: 30px; margin:0 auto; display:flex;
-flex-direction: column;}
+flex-direction: column; row-gap: 30px;}
+
 aside input, select{width:100%; padding:15px; font-size:16px;
 margin-bottom:10px; border:none;}
+aside input[type=submit]{background-color: #11dd2c; font-weight: bold; padding:20px 0; cursor:pointer; transition:all 0.3s linear;}
+
+/*EFEITOS*/
+form :where(input,select):focus {outline:4px solid #48a0df;}
+form input[type=submit]:hover{box-shadow: 0 0 10px #fff; transition:all 0.3s linear;}
 
 /*RODAPÉ*/
 footer{grid-area:rodape; background-color: #ccc; color:#274083;
