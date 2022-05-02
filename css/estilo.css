@@ -36,6 +36,7 @@ flex-direction: column; row-gap: 30px;}
 aside input, select{width:100%; padding:15px; font-size:16px;
 margin-bottom:10px; border:none;}
 aside input[type=submit]{background-color: #11dd2c; font-weight: bold; padding:20px 0; cursor:pointer; transition:all 0.3s linear;}
+::placeholder{color:#000;}
 
 /*EFEITOS*/
 form :where(input,select):focus {outline:4px solid #48a0df;}
@@ -63,6 +64,15 @@ footer .rodape-conteudo{line-height:0.7cm;}
     main h1, main h3{width:100%;}
     main figure{margin:0 5%;}
     aside input[type=submit]{font-size:20px;}
+    
+    }
+    @media screen and (max-width:750px) {
+        main figure{display:none;}
+        main{background:url(../imagens/livro2.png) #48a0df; background-size: 200px; background-repeat: no-repeat; background-position: center; background-blend-mode: multiply;}
+        main h1,main h3{text-shadow: 2px 1px 2px #000;}
+       
+        footer{flex-direction:column;}
+        footer section:nth-child(2){margin-top:20px;}
 
 }
 
