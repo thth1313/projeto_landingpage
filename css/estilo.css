@@ -48,6 +48,24 @@ footer section{margin:0 20px;}
 footer .rodape-titule{margin-bottom:20px;}
 footer .rodape-conteudo{line-height:0.7cm;}
 
+/* RESPONSIVIDADE*/
+@media screen and (max-width:1200px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'cabecalho'
+        'principal'
+        'rodape'
+        'formulario';
+
+    }
+    main{height:50vh; }
+    main h1, main h3{width:100%;}
+    main figure{margin:0 5%;}
+    aside input[type=submit]{font-size:20px;}
+
+}
+
 
 
 
